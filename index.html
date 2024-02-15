@@ -16,8 +16,27 @@
 <link rel="stylesheet" href="theme/workshop/fonts/flaticon/font/flaticon.css">
 <link rel="stylesheet" href="theme/workshop/css/aos.css">
 <link rel="stylesheet" href="theme/workshop/css/style.css">
+
+<!-- MODAL JS -->
+
+<script src = "theme/workshop/js/modal.js" defer></script>
+
 </head>
 <body>
+
+  <div class = "all-modals"> 
+    <div class="video-modal">
+      <!-- 
+      <div class="modal-header">This is Modal Header</div>
+      <h1>H</h1>
+      <h1>H</h1>
+      <h1>H</h1> -->
+      <span class = "modal-close">&times;</span> 
+      <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/XAXu0QMAIJs" title="ROOT LINK FEB EDITION | INFOSEC MEETUP BY ROOTECSTAK | NAMMA CHENNAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  
 <div class="site-wrap">
 <div class="site-mobile-menu">
 <div class="site-mobile-menu-header">
@@ -62,7 +81,17 @@
 <span class="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">An Infosec MeetUp </span>
 <h1 class="ultra-big mb-3 wow fadeInUp">ROOT LINK<span class="id-color"> FEB-2024</span></h1>
 <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">February 24th, Facilio, Chennai</span>
-<div><script src=https://widget.konfhub.com/widget.js button_id="btn_8025d6d5da4f"></script></div>
+<div class = "hero-btns"> 
+  <script src="https://widget.konfhub.com/widget.js" button_id="btn_8025d6d5da4f"></script>
+  <!-- <button id="playVideoBtn">Play YouTube Video</button> -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="playVideoBtn"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+</div>
+
+
+
+
+
+
 </div>
 </div>
 </div>
@@ -228,4 +257,12 @@ Copyright &copy; <script>document.write(new Date().getFullYear());</script> All 
   gtag('js', new Date());
   gtag('config', 'UA-23581568-13');
 </script>
+<script>
+  document.getElementById('playVideoBtn').addEventListener('click', function() {
+    // Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual YouTube video ID
+    var youtubeVideoId = 'YOUR_YOUTUBE_VIDEO_ID';
+    window.open('https://www.youtube.com/watch?v=XAXu0QMAIJs' + youtubeVideoId, '_blank');
+  });
+</script>
+
 </html>
